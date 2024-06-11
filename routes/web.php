@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $phpVersion = phpversion();
+    $laravelVersion = app()->version();
+    return view('welcome', compact('phpVersion', 'laravelVersion'));
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

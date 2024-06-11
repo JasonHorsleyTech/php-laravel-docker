@@ -84,6 +84,9 @@
                     Laravel
                 </div>
 
+                <p>PHP Version: {{ $phpVersion }}</p>
+                <p>Laravel Version: {{ $laravelVersion }}</p>
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
